@@ -488,10 +488,6 @@ body {
 	align-items: baseline;
 }
 
-.footer-left {
-	margin-right: 70px;
-}
-
 .footer-logo {
 	display: block;
 	margin-bottom: 20px;
@@ -515,10 +511,6 @@ body {
 
 .address-contacts {
 	color: var(--contacts-color);
-}
-
-.footer-center {
-	margin-right: 93px;
 }
 
 .footer-text,
@@ -626,18 +618,27 @@ body {
 
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
+	color: var(--additional-color);
+
+	transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.modal-btn-close:hover,
+.modal-btn-close:focus {
+	color: var(--accent-color);
 }
 
 .modal-icon {
 	width: 18px;
 	height: 18px;
-	fill: var(--additional-color);
+	fill: currentColor;
 }
 
 .modal-form {
 	display: flex;
 	flex-direction: column;
 }
+
 .modal-form-text {
 	margin-bottom: 12px;
 
@@ -753,7 +754,7 @@ body {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-origin: border-box;
-	background-position: right bottom;
+	background-position: center;
 }
 
 .modal-form-checkbox:focus + .modal-form-checkbox-label::before {
